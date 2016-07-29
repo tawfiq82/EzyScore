@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="/scripts/modernizr-2.6.2.js"></script>
+</head>
+<body ng-app="ezyScoreApp">
+    <div class="conatainer" ng-controller="scoreController">
+        <div id="welcome-window" style="text-align: center; margin-top: 120px;">
+            <div>
+                <h1>EzyScore</h1>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div>
+                        <label for="overs" class="control-label">Overs</label>
+                    </div>
+                    <div>
+                        <input type="number" class="form-control" id="overs" ng-model="overs" style="width: 50px; display: inline; margin-top: 5px;"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="wickets" class="control-label">Wicktes</label>
+                    </div>
+                    <div>
+                        <input type="number" class="form-control" id="wickets" ng-model="wickets" style="width: 50px; display: inline; margin-top: 5px;"/>
+                    </div>
+                </div>
+                <div class="form-group center-block">
+                    <div class="center-block">
+                        <button type="submit" class="btn btn-primary btn-lg">Start New Game</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="first-innings-window" ng-show="status == 'first-innings'"></div>
+        <div id="second-innings-window" ng-show="status == 'second-innings'"></div>
+    </div>
+
+    <script src="/scripts/jquery-1.10.2.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/angular.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script src="/Scripts/controllers/scoreController.js"></script>
+</body>
+</html>

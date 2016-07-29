@@ -1,0 +1,1 @@
+﻿var ezyScoreApp = angular.module('ezyScoreApp', []);
