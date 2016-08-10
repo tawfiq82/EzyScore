@@ -1,0 +1,19 @@
+﻿<div class="fixed-top-bar">
+    <h3>Team 1 Innings</h3>
+</div>
+<br />
+<div class="row">
+    <div class="col-xs-6 display-label">Overs</div>
+    <div class="col-xs-6 display-text">{{Game.Team1.Overs}}.{{Game.Team1.BallsInOver}}</div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="line"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 display-label">Runs</div>
+    <div class="col-xs-6 display-text">{{Game.Team1.Runs}}/{{Game.Team1.Wickets}}</div>
+</div>
+<br />
+<div ng-include="'button.htm'"></div>

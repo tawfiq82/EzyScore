@@ -1,0 +1,22 @@
+﻿<div class="fixed-top-bar">
+    <h3>Team 2 Innings</h3>
+</div>
+<div class="row">
+    <div class="team1-score-card">
+        Team 1 score: {{Game.Team1.Runs}}/{{Game.Team1.Wickets}} in {{Game.Team1.Overs}}.{{Game.Team1.BallsInOver}} Overs
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 display-label">Overs</div>
+    <div class="col-xs-6 display-text">{{Game.Team2.Overs}}.{{Game.Team2.BallsInOver}}</div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="line"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 display-label">Runs</div>
+    <div class="col-xs-6 display-text">{{Game.Team2.Runs}}/{{Game.Team2.Wickets}}</div>
+</div>
+<div ng-include="'button.htm'"></div>

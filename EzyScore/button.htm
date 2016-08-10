@@ -1,0 +1,78 @@
+﻿<div class="row">
+    <div class="col-xs-6 div-button">
+        <div class="btn-group score-button">
+            <button type="button" class="btn btn-warning btn-lg" style="width: 75%" ng-click="extra(1)">Wide</button>
+            <button type="button" class="btn btn-warning dropdown-toggle btn-lg" style="width: 25%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" ng-click="extra(2)">+1</a></li>
+                <li><a href="#" ng-click="extra(3)">+2</a></li>
+                <li><a href="#" ng-click="extra(4)">+3</a></li>
+                <li><a href="#" ng-click="extra(5)">+4</a></li>
+                <li><a href="#" ng-click="extra(6)">+5</a></li>
+                <li><a href="#" ng-click="extra(7)">+6</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-6 div-button">
+        <div class="btn-group score-button">
+            <button type="button" class="btn btn-warning btn-lg" style="width: 75%" ng-click="extra(1)">No</button>
+            <button type="button" class="btn btn-warning dropdown-toggle btn-lg" style="width: 25%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" ng-click="extra(2)">+1</a></li>
+                <li><a href="#" ng-click="extra(3)">+2</a></li>
+                <li><a href="#" ng-click="extra(4)">+3</a></li>
+                <li><a href="#" ng-click="extra(5)">+4</a></li>
+                <li><a href="#" ng-click="extra(6)">+5</a></li>
+                <li><a href="#" ng-click="extra(7)">+6</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 div-button">
+        <button type="button" class="btn btn-info btn-lg score-button" ng-click="score(0)">Dot</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-info btn-lg score-button" ng-click="score(1)">1</button>
+
+    </div>
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-info btn-lg score-button" ng-click="score(2)">2</button>
+
+    </div>
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-info btn-lg score-button" ng-click="score(3)">3</button>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-success btn-lg score-button" ng-click="score(4)">4</button>
+    </div>
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-success btn-lg  score-button" ng-click="score(5)">5</button>
+    </div>
+    <div class="col-xs-4 div-button">
+        <button type="button" class="btn btn-success btn-lg  score-button" ng-click="score(6)">6</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 div-button">
+        <button type="button" class="btn btn-danger btn-lg score-button" ng-click="out()">Out</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 div-button">
+        <button type="button" class="btn btn-primary btn-lg score-button" ng-click="undo()" ng-disabled="Game.Team1.EnableUndo == false">
+            Undo
+        </button>
+    </div>
+</div>

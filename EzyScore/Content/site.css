@@ -1,0 +1,61 @@
+﻿body {
+    color: #113556;
+    margin: 0;
+}
+
+
+.view {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 2px;
+}
+
+.div-button {
+    padding: 2px;
+}
+.score-button {
+    width: 100%;
+}
+
+.fixed-top-bar {
+    top: 0px;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #113556;
+    color: #ffffff;
+}
+
+.line {
+    height: 1px;
+    background-color: #113556;
+    left: 10px;
+    right: 0px;
+}
+
+.display-label {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.display-text {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+.team1-score-card {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 15px;
+    color: #f0ad4e;
+}
