@@ -5,7 +5,7 @@
     this.Team2 = new Team();
     this.Innings = 1;
     this.Winner = null;
-    
+    this.EnableUndo = false;
 
     this.Score = function (run, isValidBowl, isOut) {
 
@@ -27,12 +27,15 @@
         else {
             team.PrevWickets = team.Wickets;
         }
+        this.EnableUndo = true;
     }
 
     this.ChangeInnings = function () {
         if (this.Innings === 1
-           && (this.Team1.Overs === this.Overs || this.Team1.Wickets === this.Wickets))
+            && (this.Team1.Overs === this.Overs || this.Team1.Wickets === this.Wickets)) {
             this.Innings = 2;
+            this.EnableUndo = false;
+        }
     }
 
     this.CheckWinner = function () {
@@ -61,6 +64,7 @@
         } else {
             this.Team2.Undo();
         }
+        this.EnableUndo = false;
     }
 }
 
@@ -70,8 +74,7 @@ function Team() {
     this.BallsInOver = 0;
     this.Wickets = 0;
     this.Runs = 0;
-    this.EnableUndo = false;
-
+   
     //// previos states
     this.PrevOvers = 0;
     this.PrevBallsInOver = 0;
@@ -81,13 +84,11 @@ function Team() {
     this.AddRun = function (run) {
         this.PrevRuns = this.Runs;
         this.Runs += run;
-        this.EnableUndo = true;
     }
 
     this.AddWicket = function () {
         this.PrevWickets = this.Wickets;
         this.Wickets++;
-        this.EnableUndo = true;
     }
 
     this.AddBall = function () {
@@ -103,7 +104,6 @@ function Team() {
             this.PrevOvers = this.Overs;
             this.Overs++;
         }
-        this.EnableUndo = true;
     }
 
     this.Undo = function () {
